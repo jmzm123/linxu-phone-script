@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "52c30e65d3f183fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "c4e2c79a07db221f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "18af081e4d536674",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "文档/林序写稿工作流程.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "林序写稿工作流程"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "84e5e9d9a441a50c",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8a6d7b053a1288e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ccb6a745e058706f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "4af9204a0c25955a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "8c5af2a303f9a0ea",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "37bdf586ade5472e",
+    "type": "split",
+    "children": [
+      {
+        "id": "14b9be8ccb9eec1d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db08a73898a45799",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "文档/林序写稿工作流程.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "6a037037870895d0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "文档/林序写稿工作流程.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "945834b8eb63ff69",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "7152bb4b6872454d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "5e0eb96c09e6a9dd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "文档/林序写稿工作流程.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "18af081e4d536674",
+  "lastOpenFiles": [
+    "文档/写稿质量自检清单.md",
+    "稿件-手机防水等级科普.md",
+    "README.md",
+    "稿件库/正式稿件/红米十三年发展史.md",
+    "稿件库/TTS专用稿/手机防水等级科普-TTS.md",
+    "稿件库/正式稿件/手机防水等级科普.md",
+    "稿件库/正式稿件/手机振动马达科普.md",
+    "稿件库/正式稿件/双扬声器的普及史.md",
+    "稿件库/TTS专用稿/手机相机参数科普-TTS.md",
+    "稿件库/正式稿件/手机相机参数科普.md",
+    "稿件库/示例稿件/屏幕刷新率.md",
+    "参考资料/07-冈比亚.md",
+    "参考资料/06-乍得.md",
+    "参考资料/05-中非共和国.md",
+    "参考资料/04-喀麦隆.md",
+    "参考资料/03-匈牙利.md",
+    "参考资料/02-马拉维.md",
+    "参考资料/01-刚果金.md",
+    "文档/王骁风格-结构性思维指南.md",
+    "文档/林序写稿工作流程.md",
+    "调研笔记",
+    "稿件库/正式稿件",
+    "稿件库/示例稿件",
+    "稿件库/TTS专用稿",
+    "稿件库",
+    "参考资料",
+    "文档",
+    "稿件/TTS稿/正式稿件-手机相机参数科普（TTS纯口播稿）.md",
+    "稿件/示例稿件-屏幕刷新率.md",
+    "稿件/TTS稿",
+    "稿件/正式稿件-手机相机参数科普.md",
+    "稿件",
+    "王骁范文/07-冈比亚.md",
+    "王骁范文/06-乍得.md",
+    "王骁范文/05-中非共和国.md",
+    "王骁范文"
+  ]
+}
