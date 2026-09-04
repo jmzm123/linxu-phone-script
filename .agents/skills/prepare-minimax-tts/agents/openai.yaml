@@ -1,0 +1,4 @@
+interface:
+  display_name: "MiniMax TTS 口播转换"
+  short_description: "把中文科技稿转换成更适合 MiniMax 朗读的纯口播稿"
+  default_prompt: "使用 $prepare-minimax-tts 把这篇中文科技稿转换成可直接复制到 MiniMax 的 TTS 纯口播稿，并默认保存为 Markdown。"

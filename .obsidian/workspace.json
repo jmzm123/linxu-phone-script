@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文档/林序写稿工作流程.md",
+                "file": "稿件库/正式稿件/直屏vs曲屏-曲面屏消失之谜.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "林序写稿工作流程"
+              "title": "直屏vs曲屏-曲面屏消失之谜"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "文档/林序写稿工作流程.md",
+                "file": "稿件库/正式稿件/手机峰值亮度突破史.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "文档/林序写稿工作流程.md",
+                "file": "稿件库/正式稿件/手机峰值亮度突破史.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文档/林序写稿工作流程.md",
+                "file": "稿件库/正式稿件/手机峰值亮度突破史.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,9 @@
   },
   "active": "18af081e4d536674",
   "lastOpenFiles": [
+    "稿件库/TTS专用稿/直屏vs曲屏-曲面屏消失之谜-TTS.md",
+    "稿件库/正式稿件/手机峰值亮度突破史.md",
+    "文档/林序写稿工作流程.md",
     "文档/写稿质量自检清单.md",
     "稿件-手机防水等级科普.md",
     "README.md",
@@ -209,7 +212,6 @@
     "参考资料/02-马拉维.md",
     "参考资料/01-刚果金.md",
     "文档/王骁风格-结构性思维指南.md",
-    "文档/林序写稿工作流程.md",
     "调研笔记",
     "稿件库/正式稿件",
     "稿件库/示例稿件",
@@ -223,8 +225,6 @@
     "稿件/正式稿件-手机相机参数科普.md",
     "稿件",
     "王骁范文/07-冈比亚.md",
-    "王骁范文/06-乍得.md",
-    "王骁范文/05-中非共和国.md",
     "王骁范文"
   ]
 }
