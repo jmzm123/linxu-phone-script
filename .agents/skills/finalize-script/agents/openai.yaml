@@ -1,0 +1,4 @@
+interface:
+  display_name: "定稿"
+  short_description: "林序改完初稿后：查断口、移入正式稿、导出口播稿、记录修改规律"
+  default_prompt: "使用 $finalize-script 把我改好的初稿定稿，并导出口播稿。"

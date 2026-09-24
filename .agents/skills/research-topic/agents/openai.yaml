@@ -1,0 +1,4 @@
+interface:
+  display_name: "选题调研"
+  short_description: "出一页调研需求让林序去查，或者经授权后自己联网调研并按来源标注整理"
+  default_prompt: "使用 $research-topic 为这个选题出调研需求。"
