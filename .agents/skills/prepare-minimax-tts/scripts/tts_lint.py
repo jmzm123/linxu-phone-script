@@ -16,6 +16,8 @@ PAUSE_CANDIDATE = re.compile(r"<#[^\n<>]*#>")
 NUMERIC_PAUSE_TAG = re.compile(r"<#(\d+(?:\.\d+)?)#>")
 PAUSE_MARKER = re.compile(r"<#|#>")
 INLINE_PAUSE_PUNCTUATION = "，。！？；：、—…"
+# 指着画面说"这<#0.5#>是一条八类网线"时，停顿紧跟指示代词，等镜头移动。
+DEICTIC_PAUSE_WORDS = "这那"
 
 MIXED_CASE_INITIALISM = re.compile(
     r"(?<![A-Za-z])(?:SoC|eSIM)(?![A-Za-z])"
@@ -153,13 +155,14 @@ def validate_pause_tags(text: str, warnings: list[Warning]) -> None:
             immediate_before = text[: match.start()].rstrip()
             if (
                 not immediate_before
-                or immediate_before[-1] not in INLINE_PAUSE_PUNCTUATION
+                or immediate_before[-1]
+                not in INLINE_PAUSE_PUNCTUATION + DEICTIC_PAUSE_WORDS
             ):
                 add_warning(
                     warnings,
                     line_number,
                     "停顿",
-                    "内联停顿标签应紧接在中文标点之后，不能插入词语内部",
+                    "内联停顿标签应紧接在中文标点或指示代词“这”“那”之后，不能插入词语内部",
                 )
 
 

@@ -30,6 +30,9 @@ class TtsLintTests(unittest.TestCase):
     def test_valid_inline_pause_passes(self) -> None:
         self.assertEqual(lint("第一句。<#0.25#>第二句。"), [])
 
+    def test_deictic_pause_passes(self) -> None:
+        self.assertEqual(lint("这<#0.5#>是一条八类网线。那<#0.4#>就是差距。"), [])
+
     def test_valid_standalone_pause_passes(self) -> None:
         text = "上一部分到这里。\n\n<#1.5#>\n\n接下来讨论新的问题。"
         self.assertEqual(lint(text), [])

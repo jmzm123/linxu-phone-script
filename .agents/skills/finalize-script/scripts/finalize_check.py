@@ -23,15 +23,26 @@ BANNED = [
 
 DANGLING = re.compile(r"马上说到|马上就说|后面会讲|后面再说|待会儿|等下说|接下来我们|最后说个|我们下面")
 
+PAUSE = re.compile(r"<#(\d+(?:\.\d+)?)#>")
+POINTING = re.compile(r"(?:^|[。！？，])这(?:<#[\d.]+#>)?就?是")
+VISUAL_DUTY = "【画面承担"
 
-def spoken_text(text: str) -> str:
+
+def spoken_text(text: str, pause_mark: str = "") -> str:
     lines = []
     for line in text.splitlines():
         s = line.strip()
         if s.startswith("#") or s.startswith(">") or s.startswith("---"):
             continue
-        lines.append(re.sub(r"【画面[^】]*】", "", s))
+        lines.append(PAUSE.sub(pause_mark, re.sub(r"【画面[^】]*】", "", s)))
     return "".join("".join(lines).split())
+
+
+def next_content_line(lines: list[str], index: int) -> str:
+    for line in lines[index + 1:]:
+        if line.strip():
+            return line.strip()
+    return ""
 
 
 def main() -> int:
@@ -75,14 +86,33 @@ def main() -> int:
         if DANGLING.search(line):
             print(f"[断口?] 第{no}行 预告后文，确认后面真的讲了：{line.strip()}")
             problems += 1
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if s.startswith(("#", ">", "【")):
+            continue
+        if POINTING.search(s) and VISUAL_DUTY not in s and not next_content_line(lines, i).startswith(VISUAL_DUTY):
+            print(f"[音画?] 第{i + 1}行 指代句下一行没有【画面承担】，确认画面交代了指的是什么：{s}")
+            problems += 1
+    spoken = spoken_text(text, pause_mark="<P>")
+    if spoken.startswith("<P>") or spoken.endswith("<P>"):
+        print("[停顿] 停顿标签在全文开头或结尾，MiniMax 不允许")
+        problems += 1
+    if re.search(r"<P>[，。！？、；：…—“”\"]*<P>", spoken):
+        print("[停顿] 有两个停顿标签连着用，中间没有口播文字")
+        problems += 1
     if re.search(r"\n---\s*\n\s*\n*---", text) or re.search(r"\n\n\n\n", text):
         print("[格式] 有连续分隔线或多余空行")
         problems += 1
 
     count = len(spoken_text(text))
-    minutes = count / WORDS_PER_MINUTE
+    pauses = [float(x) for x in PAUSE.findall(text)]
+    seconds = count / WORDS_PER_MINUTE * 60 + sum(pauses)
     print("=" * 20, "字数", "=" * 20)
-    print(f"口播净字数 {count}，约 {int(minutes)} 分 {round((minutes % 1) * 60)} 秒（按 {WORDS_PER_MINUTE} 字/分钟）")
+    print(
+        f"口播净字数 {count}，停顿 {len(pauses)} 处共 {sum(pauses):g} 秒，"
+        f"约 {int(seconds // 60)} 分 {round(seconds % 60)} 秒（按 {WORDS_PER_MINUTE} 字/分钟）"
+    )
 
     print("=" * 20)
     print(f"需要人工确认的提示 {problems} 条。脚本看不出所有断口，仍要完整读一遍初稿。")
