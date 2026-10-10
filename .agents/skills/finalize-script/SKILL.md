@@ -20,7 +20,7 @@ description: 林序改完初稿后定稿：检查他的修改有没有留下断�
 
 ### 1. 读取和对比
 
-在项目根目录运行：
+在 `林序写稿/` 目录下运行（脚本按这个目录找 `稿件库/`，从工作区根目录启动时先 `cd 林序写稿`）：
 
 ```bash
 python3 .agents/skills/finalize-script/scripts/finalize_check.py "{选题}"

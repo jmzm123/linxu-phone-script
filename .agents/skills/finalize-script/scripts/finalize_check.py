@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """定稿前检查：对比 AI 原稿和林序改过的初稿，扫描禁用词，统计口播字数。
 
-用法（在项目根目录）：python3 .agents/skills/finalize-script/scripts/finalize_check.py <选题>
+用法（在 林序写稿/ 目录下）：python3 .agents/skills/finalize-script/scripts/finalize_check.py <选题>
 <选题> 是不带 .md 的文件名，也可以直接给初稿路径。
 """
 
