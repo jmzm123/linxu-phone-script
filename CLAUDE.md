@@ -83,7 +83,7 @@
 - 用 **prepare-minimax-tts** 导出 `3-口播稿/{选题}（TTS纯口播稿）.md`，跑 lint
 - 对比 `0-AI原稿/`，把林序的修改规律记进 `文档/林序修改记录.md`
 
-口播稿先给 Remotion 做粗剪（估算时间轴，不配音）。林序看完粗剪定下停顿、删掉画面已讲的口播后，AI Agent 同步改正式稿和口播稿；之后林序在 MiniMax 配音，用工作区 `asr_subtitle/` 按口播稿出逐字 JSON 给 Remotion，按正式稿出书面字幕 srt 存到 `4-字幕/`。
+口播稿导出后，AI Agent 用工作区 `asr_subtitle/voice.py` 配音，按口播稿出逐字 JSON 给 Remotion 粗剪，按正式稿出书面字幕 srt 存到 `4-字幕/`。林序看完粗剪定下停顿、删掉画面已讲的口播后，AI Agent 同步改正式稿和口播稿，再跑一遍 `voice.py`。
 
 发布后的复盘在 `林序发布归档/`（见其 AGENTS.md §4），结论写回 `文档/复盘表.md`。
 
