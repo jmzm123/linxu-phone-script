@@ -162,7 +162,8 @@
 | `OLED` | `O L E D` |
 | `LCD` | `L C D` |
 | `LTPO` | `L T P O` |
-| `eSIM` | `E S I M` |
+| `eSIM` | `e sim`（sim 连读，林序 2026-10-29） |
+| `SIM 卡` | `sim 卡` |
 
 项目默认保持连写的产品词包括 `Android`、`Arm`、`Bluetooth`、`Cortex`、`Elite`、`Ultra`、`Premium`、`Pro`、`Plus`、`Gen`、`WiFi` 和 `iPhone`。
 
