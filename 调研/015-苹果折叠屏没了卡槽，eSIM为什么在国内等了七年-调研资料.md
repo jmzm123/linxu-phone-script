@@ -2,6 +2,10 @@
 
 截至 2026-10-29。AI Agent 用 WebSearch/WebFetch 查，运营商和工信部原文未直接打开，下列多为【转述】。
 
+## 名称
+
+- SIM = Subscriber Identity Module（用户身份识别模块）；eSIM 的 e = embedded（嵌入式）。GSMA 称 Embedded SIM，芯片叫 eUICC，可远程写入运营商配置。【官方】GSMA https://www.gsma.com/get-involved/working-groups/sim-working-group/embedded-sim 、【转述】Wikipedia https://en.wikipedia.org/wiki/ESIM
+
 ## 时间线
 
 1. **2017-09 Apple Watch S3 蜂窝版**：国行发售约一周后，联通 9 月 28 日晚十点起停止认证申请。【转述】每日经济新闻 2017-10-11 https://www.nbd.com.cn/articles/2017-10-11/1153387.html
